@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C9DC01FB501512D180C7A47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DC2B1243AF4BCC26B49E7 /* InfoPlist.strings */; };
+		3C9DC1AFC125B551CCC33E04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9DC3D1CDBA958211AC212B /* Foundation.framework */; };
+		3C9DC30F2B76BB4A4E293E95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DCE0C0E104EFE15350AB2 /* ViewController.m */; };
+		3C9DC369D4FD54FAA6945981 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9DC3D1CDBA958211AC212B /* Foundation.framework */; };
+		3C9DC3F47708EE623D2433F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9DCB42875D4D7D8FBA4CC5 /* UIKit.framework */; };
+		3C9DC5397968AD300AEBB24D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9DCA0D98E8CAF2F14E11AA /* XCTest.framework */; };
+		3C9DC6627DE143A109A2F32E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DCC263FCF54BE4DAFD79A /* main.m */; };
+		3C9DC7BFC95D5861DF15E83B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9DCB42875D4D7D8FBA4CC5 /* UIKit.framework */; };
+		3C9DC8873332F6344D6B8EC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DCF2D36A75E9090BE4533 /* AppDelegate.m */; };
+		3C9DC98B8ED77B9DB62B282A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DCD0BF627522D44A6CA11 /* Images.xcassets */; };
+		3C9DCC6698384CEA86019DE0 /* AMTumblrHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DC8AF425167D18538C59E /* AMTumblrHud.m */; };
+		3C9DCD8B79D0C697FC713F10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9DC1642B1E009B425BE8A0 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C9DC3898CACEB1F8973C637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C9DC2A96D9B2EC4B8F4689D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C9DCD207487348B210970F2;
+			remoteInfo = AMTumblrHud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C9DC1642B1E009B425BE8A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C9DC24CD1CEB158BAACA9F3 /* AMTumblrHud-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "AMTumblrHud-Info.plist"; sourceTree = "<group>"; };
+		3C9DC3AC932BC35C1400A656 /* AMTumblrHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTumblrHud.h; sourceTree = "<group>"; };
+		3C9DC3D1CDBA958211AC212B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C9DC6CB011818BDBB034F88 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3C9DC8AF425167D18538C59E /* AMTumblrHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTumblrHud.m; sourceTree = "<group>"; };
+		3C9DC8CD90BD4DB932BCC31C /* AMTumblrHudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMTumblrHudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9DCA0D98E8CAF2F14E11AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3C9DCB42875D4D7D8FBA4CC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C9DCBDBB8DD2DD524B5D79E /* AMTumblrHud-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMTumblrHud-Prefix.pch"; sourceTree = "<group>"; };
+		3C9DCC263FCF54BE4DAFD79A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C9DCD0BF627522D44A6CA11 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3C9DCDCA7868150953660DFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C9DCE0C0E104EFE15350AB2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3C9DCE231A6B75DD79BDA428 /* AMTumblrHud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMTumblrHud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9DCF2D36A75E9090BE4533 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C9DCFC1E41A1857FC19C706 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C9DC22D48E25866B214DBC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9DC369D4FD54FAA6945981 /* Foundation.framework in Frameworks */,
+				3C9DCD8B79D0C697FC713F10 /* CoreGraphics.framework in Frameworks */,
+				3C9DC7BFC95D5861DF15E83B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9DCF66DE4363B0569AAD1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9DC5397968AD300AEBB24D /* XCTest.framework in Frameworks */,
+				3C9DC1AFC125B551CCC33E04 /* Foundation.framework in Frameworks */,
+				3C9DC3F47708EE623D2433F7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C9DC0A93F68060E03E1E860 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DC24CD1CEB158BAACA9F3 /* AMTumblrHud-Info.plist */,
+				3C9DC2B1243AF4BCC26B49E7 /* InfoPlist.strings */,
+				3C9DCC263FCF54BE4DAFD79A /* main.m */,
+				3C9DCBDBB8DD2DD524B5D79E /* AMTumblrHud-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C9DC16F110461D3C614C7B8 /* AMTumblrHud */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DC0A93F68060E03E1E860 /* Supporting Files */,
+				3C9DCDCA7868150953660DFF /* AppDelegate.h */,
+				3C9DCF2D36A75E9090BE4533 /* AppDelegate.m */,
+				3C9DCD0BF627522D44A6CA11 /* Images.xcassets */,
+				3C9DC6CB011818BDBB034F88 /* ViewController.h */,
+				3C9DCE0C0E104EFE15350AB2 /* ViewController.m */,
+				3C9DC17F990BD7FD8899869A /* AMTumblrHud */,
+			);
+			path = AMTumblrHud;
+			sourceTree = "<group>";
+		};
+		3C9DC17F990BD7FD8899869A /* AMTumblrHud */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DC3AC932BC35C1400A656 /* AMTumblrHud.h */,
+				3C9DC8AF425167D18538C59E /* AMTumblrHud.m */,
+			);
+			path = AMTumblrHud;
+			sourceTree = "<group>";
+		};
+		3C9DC5254A2C151D12DFC17D = {
+			isa = PBXGroup;
+			children = (
+				3C9DCA16E3A155B7730BAC12 /* Products */,
+				3C9DCD66523804D5156FEE22 /* Frameworks */,
+				3C9DC16F110461D3C614C7B8 /* AMTumblrHud */,
+			);
+			sourceTree = "<group>";
+		};
+		3C9DCA16E3A155B7730BAC12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DCE231A6B75DD79BDA428 /* AMTumblrHud.app */,
+				3C9DC8CD90BD4DB932BCC31C /* AMTumblrHudTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C9DCD66523804D5156FEE22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DC3D1CDBA958211AC212B /* Foundation.framework */,
+				3C9DC1642B1E009B425BE8A0 /* CoreGraphics.framework */,
+				3C9DCB42875D4D7D8FBA4CC5 /* UIKit.framework */,
+				3C9DCA0D98E8CAF2F14E11AA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C9DC6777ED523EF82FC1092 /* AMTumblrHudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C9DC35FFCA0CD6CC3A1CC27 /* Build configuration list for PBXNativeTarget "AMTumblrHudTests" */;
+			buildPhases = (
+				3C9DCF8BC6E6DDEBCDBB556E /* Sources */,
+				3C9DCF66DE4363B0569AAD1B /* Frameworks */,
+				3C9DCD9B5F29E5C6B6EAA677 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C9DC8308C2168653EE85975 /* PBXTargetDependency */,
+			);
+			name = AMTumblrHudTests;
+			productName = AMTumblrHudTests;
+			productReference = 3C9DC8CD90BD4DB932BCC31C /* AMTumblrHudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C9DCD207487348B210970F2 /* AMTumblrHud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C9DC8E54906A20179EBB060 /* Build configuration list for PBXNativeTarget "AMTumblrHud" */;
+			buildPhases = (
+				3C9DC6E95AC9036B65A3B792 /* Sources */,
+				3C9DC22D48E25866B214DBC6 /* Frameworks */,
+				3C9DC6B057D3B03F11FAB0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMTumblrHud;
+			productName = AMTumblrHud;
+			productReference = 3C9DCE231A6B75DD79BDA428 /* AMTumblrHud.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C9DC2A96D9B2EC4B8F4689D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Asich;
+			};
+			buildConfigurationList = 3C9DC608AEF76D52CEF3C18C /* Build configuration list for PBXProject "AMTumblrHud" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C9DC5254A2C151D12DFC17D;
+			productRefGroup = 3C9DCA16E3A155B7730BAC12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C9DCD207487348B210970F2 /* AMTumblrHud */,
+				3C9DC6777ED523EF82FC1092 /* AMTumblrHudTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C9DC6B057D3B03F11FAB0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9DC01FB501512D180C7A47 /* InfoPlist.strings in Resources */,
+				3C9DC98B8ED77B9DB62B282A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9DCD9B5F29E5C6B6EAA677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C9DC6E95AC9036B65A3B792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9DC6627DE143A109A2F32E /* main.m in Sources */,
+				3C9DC8873332F6344D6B8EC3 /* AppDelegate.m in Sources */,
+				3C9DC30F2B76BB4A4E293E95 /* ViewController.m in Sources */,
+				3C9DCC6698384CEA86019DE0 /* AMTumblrHud.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9DCF8BC6E6DDEBCDBB556E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C9DC8308C2168653EE85975 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C9DCD207487348B210970F2 /* AMTumblrHud */;
+			targetProxy = 3C9DC3898CACEB1F8973C637 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C9DC2B1243AF4BCC26B49E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C9DCFC1E41A1857FC19C706 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C9DC0C97BCC0C56FD6961A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMTumblrHud/AMTumblrHud-Prefix.pch";
+				INFOPLIST_FILE = "AMTumblrHudTests/AMTumblrHudTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		3C9DC2DE430BBAEAA18A2B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMTumblrHud/AMTumblrHud-Prefix.pch";
+				INFOPLIST_FILE = "AMTumblrHud/AMTumblrHud-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3C9DC531314120403AC149C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C9DC71DFC98E3905A85347F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMTumblrHud/AMTumblrHud-Prefix.pch";
+				INFOPLIST_FILE = "AMTumblrHudTests/AMTumblrHudTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3C9DC8F784BF49A995BB9479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C9DC9257F6617A7EC51CB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMTumblrHud/AMTumblrHud-Prefix.pch";
+				INFOPLIST_FILE = "AMTumblrHud/AMTumblrHud-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C9DC35FFCA0CD6CC3A1CC27 /* Build configuration list for PBXNativeTarget "AMTumblrHudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C9DC71DFC98E3905A85347F /* Debug */,
+				3C9DC0C97BCC0C56FD6961A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C9DC608AEF76D52CEF3C18C /* Build configuration list for PBXProject "AMTumblrHud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C9DC8F784BF49A995BB9479 /* Debug */,
+				3C9DC531314120403AC149C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C9DC8E54906A20179EBB060 /* Build configuration list for PBXNativeTarget "AMTumblrHud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C9DC2DE430BBAEAA18A2B64 /* Debug */,
+				3C9DC9257F6617A7EC51CB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C9DC2A96D9B2EC4B8F4689D /* Project object */;
+}
