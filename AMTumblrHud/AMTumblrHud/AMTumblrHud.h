@@ -11,8 +11,7 @@
 
 @property (nonatomic, strong) UIColor *hudColor;
 
-+(AMTumblrHud *)sharedInstance;
 -(void)showAnimated:(BOOL)animated;
-+(void)hide;
+-(void)hide;
 
 @end

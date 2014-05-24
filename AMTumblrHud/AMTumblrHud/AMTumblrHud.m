@@ -5,24 +5,14 @@
 
 #import "AMTumblrHud.h"
 
-#define kTumblrHudViewWidth 55
-#define kTumblrHudViewHeight 20
 #define kShowHideAnimateDuration 0.2
 
 
 static AMTumblrHud *_sharedInstance = nil;
 
 @implementation AMTumblrHud {
-    NSMutableArray *hudCubes;
+    NSMutableArray *hudRects;
 
-}
-
-
-+(AMTumblrHud *)sharedInstance {
-    if(!_sharedInstance) {
-        _sharedInstance = [[AMTumblrHud alloc] initWithFrame:CGRectMake(0, 0, kTumblrHudViewWidth, kTumblrHudViewHeight)];
-    }
-    return _sharedInstance;
 }
 
 - (id)initWithFrame:(CGRect)frame {
@@ -40,48 +30,48 @@ static AMTumblrHud *_sharedInstance = nil;
 - (void)configUI {
     self.backgroundColor = [UIColor clearColor];
 
-    UIView *q1 = [self drawCubeAtPosition:CGPointMake(0, 0)];
-    UIView *q2 = [self drawCubeAtPosition:CGPointMake(20, 0)];
-    UIView *q3 = [self drawCubeAtPosition:CGPointMake(40, 0)];
+    UIView *rect1 = [self drawRectAtPosition:CGPointMake(0, 0)];
+    UIView *rect2 = [self drawRectAtPosition:CGPointMake(20, 0)];
+    UIView *rect3 = [self drawRectAtPosition:CGPointMake(40, 0)];
 
-    [self addSubview:q1];
-    [self addSubview:q2];
-    [self addSubview:q3];
+    [self addSubview:rect1];
+    [self addSubview:rect2];
+    [self addSubview:rect3];
 
-    [self animateInQueueQuads:@[q1, q2, q3]];
+    [self doAnimateCycleWithRects:@[rect1, rect2, rect3]];
 }
 
 #pragma mark - animation
 
-- (void)animateInQueueQuads:(NSArray *)quads {
+- (void)doAnimateCycleWithRects:(NSArray *)rects {
     __weak typeof(self) wSelf = self;
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.25 * 0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [wSelf animateCube:quads[0] withDuration:0.25];
+        [wSelf animateRect:rects[0] withDuration:0.25];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.25 * 0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [wSelf animateCube:quads[1] withDuration:0.2];
+            [wSelf animateRect:rects[1] withDuration:0.2];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.2 * 0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [wSelf animateCube:quads[2] withDuration:0.15];
+                [wSelf animateRect:rects[2] withDuration:0.15];
             });
         });
     });
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self animateInQueueQuads:quads];
+        [wSelf doAnimateCycleWithRects:rects];
     });
 }
 
-- (void)animateCube:(UIView *)cube withDuration:(NSTimeInterval)duration {
-    [cube setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
+- (void)animateRect:(UIView *)rect withDuration:(NSTimeInterval)duration {
+    [rect setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
 
     [UIView animateWithDuration:duration
                      animations:^{
-                         cube.alpha = 1;
-                         cube.transform = CGAffineTransformMakeScale(1, 1.3);
+                         rect.alpha = 1;
+                         rect.transform = CGAffineTransformMakeScale(1, 1.3);
                      } completion:^(BOOL finished) {
         [UIView animateWithDuration:duration
                          animations:^{
-                             cube.alpha = 0.5;
-                             cube.transform = CGAffineTransformMakeScale(1, 1);
+                             rect.alpha = 0.5;
+                             rect.transform = CGAffineTransformMakeScale(1, 1);
                          } completion:^(BOOL f) {
         }];
     }];
@@ -89,31 +79,31 @@ static AMTumblrHud *_sharedInstance = nil;
 
 #pragma mark - drawing
 
-- (UIView *)drawCubeAtPosition:(CGPoint)positionPoint {
-    UIView *quad = [[UIView alloc] init];
-    CGRect quadFrame;
-    quadFrame.size.width = 15;
-    quadFrame.size.height = 16.5;
-    quadFrame.origin.x = positionPoint.x;
-    quadFrame.origin.y = 0;
-    quad.frame = quadFrame;
-    quad.backgroundColor = [UIColor redColor];
-    quad.alpha = 0.5;
-    quad.layer.cornerRadius = 3;
+- (UIView *)drawRectAtPosition:(CGPoint)positionPoint {
+    UIView *rect = [[UIView alloc] init];
+    CGRect rectFrame;
+    rectFrame.size.width = 15;
+    rectFrame.size.height = 16.5;
+    rectFrame.origin.x = positionPoint.x;
+    rectFrame.origin.y = 0;
+    rect.frame = rectFrame;
+    rect.backgroundColor = [UIColor redColor];
+    rect.alpha = 0.5;
+    rect.layer.cornerRadius = 3;
 
-    if (hudCubes == nil) {
-        hudCubes = [[NSMutableArray alloc] init];
+    if (hudRects == nil) {
+        hudRects = [[NSMutableArray alloc] init];
     }
-    [hudCubes addObject:quad];
+    [hudRects addObject:rect];
 
-    return quad;
+    return rect;
 }
 
 #pragma mark - Setters
 
 - (void)setHudColor:(UIColor *)hudColor {
-    for (UIView *cubes in hudCubes) {
-        cubes.backgroundColor = hudColor;
+    for (UIView *rect in hudRects) {
+        rect.backgroundColor = hudColor;
     }
 }
 
@@ -142,7 +132,7 @@ static AMTumblrHud *_sharedInstance = nil;
 }
 
 - (void)dealloc {
-    hudCubes = nil;
+    hudRects = nil;
 }
 
 @end
