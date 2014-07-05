@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.platform     =  :ios, '5.0'
   s.source       =  { :git => 'https://github.com/Asich/AMTumblrHud.git', :tag => "v1.0" }
-  s.source_files = 'AMTumblrHud/AMTumblrHud/AMTumblrHud.{h,m}'
+  s.source_files = 'AMTumblrHud.{h,m}'
   s.requires_arc = true
 
 end
