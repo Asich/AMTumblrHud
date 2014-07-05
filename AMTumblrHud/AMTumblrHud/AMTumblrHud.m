@@ -110,8 +110,8 @@ static AMTumblrHud *_sharedInstance = nil;
 #pragma mark -
 #pragma mark - show / hide
 
-+(void)hide {
-    if(_sharedInstance) {
+- (void)hide {
+    if (_sharedInstance) {
         [UIView animateWithDuration:kShowHideAnimateDuration animations:^{
             _sharedInstance.alpha = 0;
         } completion:^(BOOL finished) {
@@ -121,8 +121,8 @@ static AMTumblrHud *_sharedInstance = nil;
     }
 }
 
--(void)showAnimated:(BOOL)animated {
-    if(animated) {
+- (void)showAnimated:(BOOL)animated {
+    if (animated) {
         [UIView animateWithDuration:kShowHideAnimateDuration animations:^{
             self.alpha = 1;
         }];
