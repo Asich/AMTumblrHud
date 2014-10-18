@@ -25,6 +25,13 @@ static AMTumblrHud *_sharedInstance = nil;
     return self;
 }
 
+-(void)layoutSubviews {
+    self.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin
+                            | UIViewAutoresizingFlexibleRightMargin
+                            | UIViewAutoresizingFlexibleBottomMargin
+                            | UIViewAutoresizingFlexibleTopMargin;
+}
+
 #pragma mark - config UI
 
 - (void)configUI {
