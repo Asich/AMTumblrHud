@@ -14,24 +14,9 @@
 		7B2F0ACD199C7F9B00082A9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F0ACC199C7F9B00082A9B /* main.m */; };
 		7B2F0AD1199C7F9B00082A9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F0AD0199C7F9B00082A9B /* AppDelegate.m */; };
 		7B2F0AD3199C7F9B00082A9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2F0AD2199C7F9B00082A9B /* Images.xcassets */; };
-		7B2F0ADA199C7F9B00082A9B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2F0AD9199C7F9B00082A9B /* XCTest.framework */; };
-		7B2F0ADB199C7F9B00082A9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2F0AC0199C7F9A00082A9B /* Foundation.framework */; };
-		7B2F0ADC199C7F9B00082A9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2F0AC4199C7F9A00082A9B /* UIKit.framework */; };
-		7B2F0AE4199C7F9B00082A9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B2F0AE2199C7F9B00082A9B /* InfoPlist.strings */; };
-		7B2F0AE6199C7F9B00082A9B /* AMTumblrHudDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F0AE5199C7F9B00082A9B /* AMTumblrHudDemoTests.m */; };
 		7B2F0AF2199C7FCD00082A9B /* AMTumblrHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F0AF1199C7FCD00082A9B /* AMTumblrHud.m */; };
 		7B2F0AF5199C7FF700082A9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F0AF4199C7FF700082A9B /* ViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7B2F0ADD199C7F9B00082A9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B2F0AB5199C7F9A00082A9B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B2F0ABC199C7F9A00082A9B;
-			remoteInfo = AMTumblrHudDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7B2F0ABD199C7F9A00082A9B /* AMTumblrHudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMTumblrHudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,11 +30,7 @@
 		7B2F0ACF199C7F9B00082A9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B2F0AD0199C7F9B00082A9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7B2F0AD2199C7F9B00082A9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7B2F0AD8199C7F9B00082A9B /* AMTumblrHudDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMTumblrHudDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2F0AD9199C7F9B00082A9B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7B2F0AE1199C7F9B00082A9B /* AMTumblrHudDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMTumblrHudDemoTests-Info.plist"; sourceTree = "<group>"; };
-		7B2F0AE3199C7F9B00082A9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7B2F0AE5199C7F9B00082A9B /* AMTumblrHudDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMTumblrHudDemoTests.m; sourceTree = "<group>"; };
 		7B2F0AF0199C7FCD00082A9B /* AMTumblrHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTumblrHud.h; sourceTree = "<group>"; };
 		7B2F0AF1199C7FCD00082A9B /* AMTumblrHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTumblrHud.m; sourceTree = "<group>"; };
 		7B2F0AF3199C7FF700082A9B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -67,16 +48,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B2F0AD5199C7F9B00082A9B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B2F0ADA199C7F9B00082A9B /* XCTest.framework in Frameworks */,
-				7B2F0ADC199C7F9B00082A9B /* UIKit.framework in Frameworks */,
-				7B2F0ADB199C7F9B00082A9B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				7B2F0AC6199C7F9B00082A9B /* AMTumblrHudDemo */,
-				7B2F0ADF199C7F9B00082A9B /* AMTumblrHudDemoTests */,
 				7B2F0ABF199C7F9A00082A9B /* Frameworks */,
 				7B2F0ABE199C7F9A00082A9B /* Products */,
 			);
@@ -94,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				7B2F0ABD199C7F9A00082A9B /* AMTumblrHudDemo.app */,
-				7B2F0AD8199C7F9B00082A9B /* AMTumblrHudDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,24 +104,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7B2F0ADF199C7F9B00082A9B /* AMTumblrHudDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				7B2F0AE5199C7F9B00082A9B /* AMTumblrHudDemoTests.m */,
-				7B2F0AE0199C7F9B00082A9B /* Supporting Files */,
-			);
-			path = AMTumblrHudDemoTests;
-			sourceTree = "<group>";
-		};
-		7B2F0AE0199C7F9B00082A9B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7B2F0AE1199C7F9B00082A9B /* AMTumblrHudDemoTests-Info.plist */,
-				7B2F0AE2199C7F9B00082A9B /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		7B2F0AEF199C7FCD00082A9B /* AMTumblrHud */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,24 +133,6 @@
 			productReference = 7B2F0ABD199C7F9A00082A9B /* AMTumblrHudDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7B2F0AD7199C7F9B00082A9B /* AMTumblrHudDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B2F0AEC199C7F9B00082A9B /* Build configuration list for PBXNativeTarget "AMTumblrHudDemoTests" */;
-			buildPhases = (
-				7B2F0AD4199C7F9B00082A9B /* Sources */,
-				7B2F0AD5199C7F9B00082A9B /* Frameworks */,
-				7B2F0AD6199C7F9B00082A9B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B2F0ADE199C7F9B00082A9B /* PBXTargetDependency */,
-			);
-			name = AMTumblrHudDemoTests;
-			productName = AMTumblrHudDemoTests;
-			productReference = 7B2F0AD8199C7F9B00082A9B /* AMTumblrHudDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,11 +141,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = askar;
-				TargetAttributes = {
-					7B2F0AD7199C7F9B00082A9B = {
-						TestTargetID = 7B2F0ABC199C7F9A00082A9B;
-					};
-				};
 			};
 			buildConfigurationList = 7B2F0AB8199C7F9A00082A9B /* Build configuration list for PBXProject "AMTumblrHudDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -227,7 +155,6 @@
 			projectRoot = "";
 			targets = (
 				7B2F0ABC199C7F9A00082A9B /* AMTumblrHudDemo */,
-				7B2F0AD7199C7F9B00082A9B /* AMTumblrHudDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,14 +166,6 @@
 			files = (
 				7B2F0ACB199C7F9B00082A9B /* InfoPlist.strings in Resources */,
 				7B2F0AD3199C7F9B00082A9B /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B2F0AD6199C7F9B00082A9B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B2F0AE4199C7F9B00082A9B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,37 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B2F0AD4199C7F9B00082A9B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B2F0AE6199C7F9B00082A9B /* AMTumblrHudDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7B2F0ADE199C7F9B00082A9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B2F0ABC199C7F9A00082A9B /* AMTumblrHudDemo */;
-			targetProxy = 7B2F0ADD199C7F9B00082A9B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7B2F0AC9199C7F9B00082A9B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7B2F0ACA199C7F9B00082A9B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7B2F0AE2199C7F9B00082A9B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B2F0AE3199C7F9B00082A9B /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -398,46 +293,6 @@
 			};
 			name = Release;
 		};
-		7B2F0AED199C7F9B00082A9B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AMTumblrHudDemo.app/AMTumblrHudDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AMTumblrHudDemo/AMTumblrHudDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AMTumblrHudDemoTests/AMTumblrHudDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		7B2F0AEE199C7F9B00082A9B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AMTumblrHudDemo.app/AMTumblrHudDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AMTumblrHudDemo/AMTumblrHudDemo-Prefix.pch";
-				INFOPLIST_FILE = "AMTumblrHudDemoTests/AMTumblrHudDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,15 +310,6 @@
 			buildConfigurations = (
 				7B2F0AEA199C7F9B00082A9B /* Debug */,
 				7B2F0AEB199C7F9B00082A9B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B2F0AEC199C7F9B00082A9B /* Build configuration list for PBXNativeTarget "AMTumblrHudDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B2F0AED199C7F9B00082A9B /* Debug */,
-				7B2F0AEE199C7F9B00082A9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

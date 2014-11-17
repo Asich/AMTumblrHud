@@ -3,7 +3,7 @@ AMTumblrHud
 
 Progress HUD inspired by Tumblr app.
 
-<img src="http://oi58.tinypic.com/dep9ux.jpg"/>
+<img src="https://raw.github.com/Asich/AMTumblrHud/master/Screenshots/AMTumblrHUD.gif" width="320" />
 
 ## Installation
 

@@ -8,11 +8,8 @@
 #define kShowHideAnimateDuration 0.2
 
 
-static AMTumblrHud *_sharedInstance = nil;
-
 @implementation AMTumblrHud {
     NSMutableArray *hudRects;
-
 }
 
 - (id)initWithFrame:(CGRect)frame {
@@ -111,14 +108,11 @@ static AMTumblrHud *_sharedInstance = nil;
 #pragma mark - show / hide
 
 - (void)hide {
-    if (_sharedInstance) {
-        [UIView animateWithDuration:kShowHideAnimateDuration animations:^{
-            _sharedInstance.alpha = 0;
-        } completion:^(BOOL finished) {
-            [_sharedInstance removeFromSuperview];
-            _sharedInstance = nil;
-        }];
-    }
+    [UIView animateWithDuration:kShowHideAnimateDuration animations:^{
+        self.alpha = 0;
+    } completion:^(BOOL finished) {
+        [self removeFromSuperview];
+    }];
 }
 
 - (void)showAnimated:(BOOL)animated {

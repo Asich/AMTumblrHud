@@ -24,7 +24,7 @@
 
     AMTumblrHud *tumblrHUD = [[AMTumblrHud alloc] initWithFrame:CGRectMake((CGFloat) ((self.view.frame.size.width - 55) * 0.5),
             (CGFloat) ((self.view.frame.size.height - 20) * 0.5), 55, 20)];
-    tumblrHUD.hudColor = UIColorFromRGB(0xF1F2F3);//[UIColor magentaColor];
+    tumblrHUD.hudColor = UIColorFromRGB(0xF1F2F3);
     [self.view addSubview:tumblrHUD];
 
     [tumblrHUD showAnimated:YES];
