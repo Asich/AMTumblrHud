@@ -13,6 +13,10 @@ Add the `AMTumblrHud.h` and `AMTumblrHud.m` source files to your project.
 2. Open your project in Xcode, then drag and drop `AMTumblrHud.h` and `AMTumblrHud.m` onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project.
 3. Include AMTumblrHud wherever you need it with `#import "AMTumblrHud.h"`
 
+Or use **Cocoapods:**
+
+pod 'AMTumblrHud', '1.0.0'
+
 ## Usage
 
 ```objective-c
