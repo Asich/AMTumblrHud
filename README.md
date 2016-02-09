@@ -15,7 +15,7 @@ Add the `AMTumblrHud.h` and `AMTumblrHud.m` source files to your project.
 
 Or use **Cocoapods:**
 
-pod 'AMTumblrHud', '1.0.0'
+pod 'AMTumblrHud'
 
 ## Usage
 
@@ -29,5 +29,4 @@ tumblrHUD.hudColor = UIColorFromRGB(0xF1F2F3); //[UIColor magentaColor];
 
 ## License
 
-This code is distributed under the terms and conditions of the [MIT license](LICENSE). 
-
+This code is distributed under the terms and conditions of the [MIT license](LICENSE).
